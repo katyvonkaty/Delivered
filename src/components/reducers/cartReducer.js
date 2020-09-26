@@ -13,14 +13,14 @@ import { ADD_TO_CART,REMOVE_ITEM,SUB_QUANTITY,ADD_QUANTITY,ADD_SHIPPING } from '
 
 const initState = {
     items: [
-        {id:1,title:'Winter body', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:110,img: Item1},
-        {id:2,title:'Adidas', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:80,img: Item2},
-        {id:3,title:'Vans', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:120,img: Item3},
-        {id:4,title:'White', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:260,img: Item4},
-        {id:5,title:'Cropped-sho', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.", price:160,img: Item5},
-        {id:6,title:'Blues', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:90,img:Item6},
-      {id:7,title:'Blues', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:90,img:Item7},
-    {id:8,title:'Blues', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:90,img:Item8}],
+        {id:1,title:'Orange Sunshine Coffeecake', desc: "As the days grow longer and we turn toward springtime, this tender coffeecake, with its orange-cinnamon filling, is a great way to celebrate.", price:110,img: Item1},
+        {id:2,title:'Cinnamon Babka', desc: "Tender and high-rising, with subtle sweetness and a hint of vanilla, these biscuits are perfect as the base for shortcake — or all on their own.", price:80,img: Item2},
+        {id:3,title:'Peachberry Buckle', desc: "Tender and high-rising, with subtle sweetness and a hint of vanilla, these biscuits are perfect as the base for shortcake — or all on their own.",price:120,img: Item3},
+        {id:4,title:'Pumpkin Streusel Coffeecake', desc: "If you’ve got a lot on your plate these days but still want to be your family’s dinner hero, you’ve come to the right place.", price:260,img: Item4},
+        {id:5,title:'Gluten-Free Cream Tea Scones', desc: "This recipe is quick to assemble, and parts of it can even be done in advance.", price:160,img: Item5},
+        {id:6,title:'Baking Powder Biscuits', desc: " If you bought an extra-big bird for your holiday feast to cover some extra meals, you've come to the right place.",price:90,img:Item6},
+      {id:7,title:'Savory Cheddar Cheese Biscuits', desc: "Dark chocolate cake with a molten fudge center-heaven! This rich, moist chocolate cake makes its own hot fudge sauce. Just cut it open, and enjoy the molten treasure inside.",price:90,img:Item7},
+    {id:8,title:'Biscuits for Breakfast', desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, ex.",price:90,img:Item8}],
     addedItems:[],
     total: 0
 
