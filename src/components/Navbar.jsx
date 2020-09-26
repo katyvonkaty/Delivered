@@ -7,11 +7,11 @@ const Navbar = ()=>{
 
            <nav className="nav-wrapper">
                <div className="container">
-                   <Link to="/" className="brand-logo">Shopping</Link>
+                   <Link to="/" className="brand-logo">Delivered</Link>
 
                    <ul className="right">
-                       <li><Link to="/">Shop</Link></li>
-                       <li><Link to="/cart">My cart</Link></li>
+                       <li><Link to="/about">About</Link></li>
+                       <li><Link to="/">My cart</Link></li>
                        <li><Link to="/cart">Shopping Cart <ShoppingCartIcon /></Link></li>
                    </ul>
                </div>
