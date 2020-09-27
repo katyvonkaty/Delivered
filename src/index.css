@@ -1,37 +1,86 @@
-.box{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap
-}
-.material-icons{
-    font-size: 2.4em;
-    cursor: pointer;
-}
-.card{
-    width: 300px;
-}
-.card .card-image .card-title{
-    color: black;
-    font-weight: 400
-}
-.cart{
-    margin-top:40px;
-}
-.collection .collection-item{
-    display: flex;
-}
-.collection-item.avatar .title {
-    font-size: 20px;
-    font-weight: 500;
-    color: #ee6e73;
-    display: block;
-    margin-bottom: 20px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap');
 
+nav {
+  background-color: #2C3E50 !important;
 }
-.collection .collection-item img{
-    width: 150px;
-    margin-right: 25px;
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
 }
-.item-desc{
-    align-self:center;
+
+.about {
+  background-image:url('https://www.kingarthurbaking.com/sites/default/files/styles/featured_image_2x/public/recipe_legacy/1132-3-large.jpg?itok=nUO7xE5U');
+  background-size:cover;
+  height: 100vh;
+    /* margin-top: -42px; */
+}
+
+.link {
+  color:white;
+  background-color: #2C3E50 !important;
+  padding:20px;
+}
+
+
+h1,h2,h3,h4,h5 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight:700;
+}
+
+.collection-item.avatar .title {
+  font-weight:700 !important;
+  font-size:20px !important;
+color: #2C3E50 !important;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap
+}
+
+.material-icons {
+  font-size: 2.4em;
+  cursor: pointer;
+}
+
+
+.btn-floating.halfway-fab {
+  background-color: #2C3E50;
+  text-align:center;
+  line-height: 50px;
+}
+
+.card {
+  width: 300px;
+}
+
+.card .card-image .card-title {
+  color: black;
+  font-weight: 400
+}
+
+.cart {
+  margin-top: 40px;
+}
+
+.collection .collection-item {
+  display: flex;
+}
+
+.collection-item.avatar .title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ee6e73;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.collection .collection-item img {
+  width: 150px;
+  margin-right: 25px;
+}
+
+.item-desc {
+  align-self: center;
 }

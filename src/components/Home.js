@@ -16,14 +16,15 @@ import AddCircleIcon from '@material-ui/icons/AddCircle';
         let itemList = this.props.items.map(item=>{
             return(
               <div class="row">
-                <div className="card col-sm-4" key={item.id}>
+                <div className="card" key={item.id}>
                         <div className="card-image">
                             <img src={item.img} alt={item.title}/>
-                            <span className="card-title">{item.title}</span>
                             <span to="/" className="btn-floating halfway-fab waves-effect waves-light" onClick={()=>{this.handleClick(item.id)}}><AddCircleIcon /></span>
                         </div>
 
                         <div className="card-content">
+                        <span className="card-title">{item.title}</span>
+
                             <p>{item.desc}</p>
                             <p><b>Price: {item.price}$</b></p>
                         </div>
