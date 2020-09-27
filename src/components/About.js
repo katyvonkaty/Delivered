@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
+
 class About extends Component{
 
     render(){
@@ -14,12 +15,15 @@ class About extends Component{
             <Row>
               <Col sm={4}> <h3 className="link"> About </h3></Col>
             </Row>
+
             <Row>
-              <Col sm={4}> <h3 className="link"> Order </h3> </Col>
+              <Col sm={4}><a href="/"> <h3 className="link"> Order </h3> </a></Col>
             </Row>
+
             <Row>
               <Col sm={4}> <h3 className="link"> Photos </h3> </Col>
             </Row>
+
             <Row>
               <Col sm={4}><h3 className="link"> Contact </h3></Col>
             </Row>
