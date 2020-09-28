@@ -4,7 +4,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Copy from './Copy';
-import CopyImg from "./CopyImg"
+import CopyImg from "./CopyImg";
+import BigImg from "./BigImg";
 
 
 
@@ -37,8 +38,9 @@ class About extends Component{
           </Jumbotron>
 
 
-          <Copy />
+            <Copy />
             <CopyImg />
+            <BigImg />
 
           </React.Fragment>
 

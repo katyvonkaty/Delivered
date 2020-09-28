@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 
 
 
@@ -15,6 +16,8 @@ class Copy extends Component{
                 <Col sm={{span:6, offset:3}}>
                 <h3> About Us </h3>
                 <p> EVERYONE has a favorite chocolate chip cookie recipe; this is ours. These golden cookies are packed with chips and loaded with buttery flavor. They walk the line nicely between crunchy and chewy: the edges are crisp, while </p>
+                <Button variant="outline-primary">Learn More</Button>{' '}
+
                 </Col>
               </Row>
           </Container>
