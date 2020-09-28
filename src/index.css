@@ -12,7 +12,7 @@ nav .brand-logo, nav ul a {
   color: #2C3E50 !important;
 }
 
-.about {
+.jumbotron {
   background-image:url('./images/cookies.jpg');
   background-size:cover;
   height: 100vh;
@@ -25,6 +25,10 @@ nav .brand-logo, nav ul a {
   padding:20px;
 }
 
+.copy {
+  text-align:center;
+}
+
 
 h1,h2,h3,h4,h5 {
   font-family: 'Roboto Condensed', sans-serif;
@@ -34,7 +38,7 @@ h1,h2,h3,h4,h5 {
 .collection-item.avatar .title {
   font-weight:700 !important;
   font-size:20px !important;
-color: #2C3E50 !important;
+  color: #2C3E50 !important;
 }
 
 .box {

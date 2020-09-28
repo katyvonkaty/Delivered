@@ -3,18 +3,15 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Copy from './Copy';
 
 
-
-class About extends Component{
+class Jumbotron extends Component{
 
     render(){
 
         return(
-          <React.Fragment>
 
-          <Jumbotron fluid className="about">
+          <Jumbotron fluid className="jumbotron">
             <Container>
               <Row>
                 <Col sm={4}> <h3 className="link"> About </h3></Col>
@@ -35,11 +32,6 @@ class About extends Component{
             </Container>
           </Jumbotron>
 
-
-          <Copy />
-
-          </React.Fragment>
-
 )}};
 
-export default About;
+export default Jumbotron;
