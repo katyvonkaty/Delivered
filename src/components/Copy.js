@@ -10,7 +10,7 @@ class Copy extends Component{
 
     render(){
         return(
-          <Container className="copy">
+          <Container fluid className="copy">
               <Row>
                 <Col sm={{span:6, offset:3}}>
                 <h3> About Us </h3>
