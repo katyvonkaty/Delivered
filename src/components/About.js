@@ -41,6 +41,8 @@ class About extends Component{
             <Copy />
             <CopyImg />
             <BigImg />
+            <Copy />
+
 
           </React.Fragment>
 
