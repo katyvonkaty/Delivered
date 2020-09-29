@@ -40,14 +40,24 @@ class About extends Component{
 
             <Copy
             title= "Wow check out this prop"
-            content= "propping so hard" />
-            
-            <CopyImg />
+            content= "propping so hard"
+            buttonText="lets go"
+            />
+
+            <CopyImg
+            heading="look ma no hands"
+            copy="working?"
+            buttonText="lets go"
+            img="https://www.kingarthurbaking.com/sites/default/files/styles/featured_image_2x/public/recipe_legacy/4239-3-large.jpg?itok=29sxdN-S"
+
+            />
             <BigImg />
 
             <Copy
             title= "More Props"
-            content= "Prop so hard" />/>
+            content= "Prop so hard"
+              buttonText="lets go"
+            />
 
 
           </React.Fragment>

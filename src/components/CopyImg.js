@@ -2,31 +2,25 @@ import React, { Component } from 'react';
 import Container from "react-bootstrap/Container";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Item8 from '../images/item8.jpg'
 import Button from 'react-bootstrap/Button';
 
 
 
-class CopyImg extends Component {
-
-  render(){
+const CopyImg = (props) => {
     return (
       <Container fluid className="copyimg">
+        <Row>
+          <Col sm={{span:4, offset:1}}> <h4> {props.heading} </h4> <br />
+          <p> {props.copy} </p>
+          <Button variant="outline-primary">{props.buttonText}</Button>{' '}
+          </Col>
+          <Col sm={6}><img className="cinnamon" src={props.img} /></Col>
 
-      <Row>
-        <Col sm={{span:4, offset:1}}> <h4> EVERYONE has a favorite chocolate chip cookie recipe; this is ours. </h4>
-        <p> EVERYONE has a favorite chocolate chip cookie recipe; this is ours. </p>
-        <Button variant="outline-primary">Learn More</Button>{' '}
-        </Col>
-        <Col sm={6}><img className="cinnamon" src={Item8} /></Col>
-
-      </Row>
-
+        </Row>
       </Container>
 
 
     )
-  }
 }
 
 
