@@ -1,67 +1,59 @@
 import React, { Component } from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Copy from './Copy';
-import CopyImg from "./CopyImg";
-import BigImg from "./BigImg";
+import {connect} from "react-redux"
+import { addToCart } from './actions/cartActions'
+import AddCircleIcon from '@material-ui/icons/AddCircle';
+
+// import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 
 
+ class About extends Component{
 
-class About extends Component{
+    handleClick = (id)=>{
+        this.props.addToCart(id);
+    }
 
     render(){
+        let itemList = this.props.items.map(item=>{
+            return(
+              <div class="row">
+                <div className="card" key={item.id}>
+                        <div className="card-image">
+                            <img src={item.img} alt={item.title}/>
+                            <span to="/" className="btn-floating halfway-fab waves-effect waves-light" onClick={()=>{this.handleClick(item.id)}}><AddCircleIcon /></span>
+                        </div>
+
+                        <div className="card-content">
+                        <span className="card-title">{item.title}</span>
+
+                            <p>{item.desc}</p>
+                            <p><b>Price: {item.price}$</b></p>
+                        </div>
+                 </div>
+                 </div>
+
+            )
+        })
 
         return(
-          <React.Fragment>
+            <div className="container">
+                <h3 className="center">Our items</h3>
+                <div className="box">
+                    {itemList}
+                </div>
+            </div>
+        )
+    }
+}
+const mapStateToProps = (state)=>{
+    return {
+      items: state.items
+    }
+  }
+const mapDispatchToProps= (dispatch)=>{
 
-          <Jumbotron fluid className="about">
-            <Container>
-              <Row>
-                <Col sm={4}> <h3 className="link"> About </h3></Col>
-              </Row>
+    return{
+        addToCart: (id)=>{dispatch(addToCart(id))}
+    }
+}
 
-              <Row>
-                <Col sm={4}><a href="/"> <h3 className="link"> Order </h3> </a></Col>
-              </Row>
-
-              <Row>
-                <Col sm={4}> <h3 className="link"> Photos </h3> </Col>
-              </Row>
-
-              <Row>
-                <Col sm={4}><h3 className="link"> Contact </h3></Col>
-              </Row>
-
-            </Container>
-          </Jumbotron>
-
-
-            <Copy
-            title= "Wow check out this prop"
-            content= "propping so hard"
-            buttonText="lets go"
-            />
-
-            <CopyImg
-            heading="look ma no hands"
-            copy="working?"
-            buttonText="lets go"
-            img="https://www.kingarthurbaking.com/sites/default/files/styles/featured_image_2x/public/recipe_legacy/4239-3-large.jpg?itok=29sxdN-S"
-
-            />
-            <BigImg />
-
-            <Copy
-            title= "More Props"
-            content= "Prop so hard"
-              buttonText="lets go"
-            />
-
-
-          </React.Fragment>
-
-)}};
-
-export default About;
+export default connect(mapStateToProps,mapDispatchToProps)(About)

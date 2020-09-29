@@ -5,6 +5,7 @@ import Home from './components/Home'
 import Cart from './components/Cart'
 import About from './components/About'
 
+
 class App extends Component {
   render() {
     return (
@@ -13,8 +14,8 @@ class App extends Component {
               <Navbar/>
                 <Switch>
                     <Route exact path="/" component={Home}/>
-                    <Route path="/cart" component={Cart}/>
                     <Route path="/about" component={About}/>
+                    <Route path="/cart" component={Cart}/>
                   </Switch>
              </div>
        </BrowserRouter>

@@ -1,59 +1,67 @@
 import React, { Component } from 'react';
-import {connect} from "react-redux"
-import { addToCart } from './actions/cartActions'
-import AddCircleIcon from '@material-ui/icons/AddCircle';
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Copy from './Copy';
+import CopyImg from "./CopyImg";
+import BigImg from "./BigImg";
 
-// import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 
 
- class Home extends Component{
-
-    handleClick = (id)=>{
-        this.props.addToCart(id);
-    }
+class Home extends Component{
 
     render(){
-        let itemList = this.props.items.map(item=>{
-            return(
-              <div class="row">
-                <div className="card" key={item.id}>
-                        <div className="card-image">
-                            <img src={item.img} alt={item.title}/>
-                            <span to="/" className="btn-floating halfway-fab waves-effect waves-light" onClick={()=>{this.handleClick(item.id)}}><AddCircleIcon /></span>
-                        </div>
-
-                        <div className="card-content">
-                        <span className="card-title">{item.title}</span>
-
-                            <p>{item.desc}</p>
-                            <p><b>Price: {item.price}$</b></p>
-                        </div>
-                 </div>
-                 </div>
-
-            )
-        })
 
         return(
-            <div className="container">
-                <h3 className="center">Our items</h3>
-                <div className="box">
-                    {itemList}
-                </div>
-            </div>
-        )
-    }
-}
-const mapStateToProps = (state)=>{
-    return {
-      items: state.items
-    }
-  }
-const mapDispatchToProps= (dispatch)=>{
+          <React.Fragment>
 
-    return{
-        addToCart: (id)=>{dispatch(addToCart(id))}
-    }
-}
+          <Jumbotron fluid className="about">
+            <Container>
+              <Row>
+                <Col sm={4}> <h3 className="link"> About </h3></Col>
+              </Row>
 
-export default connect(mapStateToProps,mapDispatchToProps)(Home)
+              <Row>
+                <Col sm={4}><a href="/test"> <h3 className="link"> Order </h3> </a></Col>
+              </Row>
+
+              <Row>
+                <Col sm={4}> <a href="/about"><h3 className="link"> Photos </h3> </a> </Col>
+              </Row>
+
+              <Row>
+                <Col sm={4}><h3 className="link"> Contact </h3></Col>
+              </Row>
+
+            </Container>
+          </Jumbotron>
+
+
+            <Copy
+            title= "Super-moist and packed with flavor"
+            content= "Whenever we have a company gathering, this pumpkin bread is one of the first things to disappear. Super-moist and packed with flavor, it can be made into a simple pumpkin loaf; or enhanced with chocolate chips and/or nuts. Or raisins"
+            buttonText="lets go"
+            />
+
+            <CopyImg
+            heading="Chocolate Fudge Bundt Cake"
+            copy="This moist, nicely dense fudge cake has an ultra-fine grain: think pound cake. Topped with a thick layer of rich ganache, it's a chocolate lover's dream come true."
+            buttonText="lets go"
+            img="https://www.kingarthurbaking.com/sites/default/files/styles/featured_image_2x/public/recipe_legacy/9013-3-large.jpg?itok=dB2j5_Nf"
+
+            />
+            <BigImg />
+
+            <Copy
+            title= "Original Cake Pan Cake"
+            content= "Now we're proud to name this our 225th Anniversary Recipe of the Centuries. Dark, moist, delicious, and CHOCOLATE, this is truly a cake for all reasons, all seasons — and for bakers (and their family and friends) everywhere."
+              buttonText="lets go"
+            />
+
+
+          </React.Fragment>
+
+)}};
+
+export default Home;
