@@ -38,10 +38,16 @@ class About extends Component{
           </Jumbotron>
 
 
-            <Copy />
+            <Copy
+            title= "Wow check out this prop"
+            content= "propping so hard" />
+            
             <CopyImg />
             <BigImg />
-            <Copy />
+
+            <Copy
+            title= "More Props"
+            content= "Prop so hard" />/>
 
 
           </React.Fragment>
