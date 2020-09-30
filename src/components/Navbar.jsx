@@ -18,7 +18,7 @@ const Navbar = ()=>{
 
                    <ul className="right">
                        <li><Link to="/about">About</Link></li>
-                       <li><Link to="/test">My cart</Link></li>
+                       <li><Link to="/sweets">Sweets</Link></li>
                        <li><Link to="/cart">Shopping Cart <ShoppingCartIcon /></Link></li>
                    </ul>
                </div>

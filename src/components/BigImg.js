@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 import Container from "react-bootstrap/Container";
-import Item9 from '../images/item9.jpg';
 
-class BigImg extends Component {
+const BigImg = (props) => {
 
-  render() {
     return (
       <Container fluid>
-      <img className="bigimg" src={Item9} alt="cookies" />
+      <img className="bigimg" src={props.img} alt="cookies" />
       </Container>
     )
-  }
+
 }
 
 export default BigImg

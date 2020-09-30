@@ -12,7 +12,7 @@ const CopyImg = (props) => {
         <Row>
           <Col sm={{span:4, offset:1}}> <h4> {props.heading} </h4> <br />
           <p> {props.copy} </p>
-          <Button variant="outline-primary">{props.buttonText}</Button>{' '}
+          <Button variant="dark">{props.buttonText}</Button>{' '}
           </Col>
           <Col sm={6}><img className="cinnamon" src={props.img} /></Col>
 

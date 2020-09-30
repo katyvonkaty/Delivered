@@ -19,11 +19,11 @@ class Home extends Component{
           <Jumbotron fluid className="about">
             <Container>
               <Row>
-                <Col sm={4}> <h3 className="link"> About </h3></Col>
+                <Col sm={4}> <a href="/about"> <h3 className="link"> About </h3>  </a></Col>
               </Row>
 
               <Row>
-                <Col sm={4}><a href="/test"> <h3 className="link"> Order </h3> </a></Col>
+                <Col sm={4}><a href="/sweets"> <h3 className="link"> Order </h3> </a></Col>
               </Row>
 
               <Row>
@@ -51,7 +51,10 @@ class Home extends Component{
             img="https://www.kingarthurbaking.com/sites/default/files/styles/featured_image_2x/public/recipe_legacy/9013-3-large.jpg?itok=dB2j5_Nf"
 
             />
-            <BigImg />
+
+            <BigImg
+            img="https://www.kingarthurbaking.com/sites/default/files/styles/featured_image_2x/public/recipe_legacy/1070-3-large.jpg?itok=DEoaSMRA"
+            />
 
             <Copy
             title= "Original Cake Pan Cake"
