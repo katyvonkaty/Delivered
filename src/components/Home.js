@@ -18,21 +18,21 @@ class Home extends Component{
 
           <Jumbotron fluid className="about">
             <Container>
-              <Row>
-                <Col sm={4}> <a href="/about"> <h3 className="link"> About </h3>  </a></Col>
-              </Row>
-
-              <Row>
-                <Col sm={4}><a href="/sweets"> <h3 className="link"> Order </h3> </a></Col>
-              </Row>
-
-              <Row>
-                <Col sm={4}> <a href="/about"><h3 className="link"> Photos </h3> </a> </Col>
-              </Row>
-
-              <Row>
-                <Col sm={4}><h3 className="link"> Contact </h3></Col>
-              </Row>
+              // <Row>
+              //   <Col sm={4}> <a href="/about"> <h3 className="link"> About </h3>  </a></Col>
+              // </Row>
+              //
+              // <Row>
+              //   <Col sm={4}><a href="/sweets"> <h3 className="link"> Order </h3> </a></Col>
+              // </Row>
+              //
+              // <Row>
+              //   <Col sm={4}> <a href="/about"><h3 className="link"> Photos </h3> </a> </Col>
+              // </Row>
+              //
+              // <Row>
+              //   <Col sm={4}><h3 className="link"> Contact </h3></Col>
+              // </Row>
 
             </Container>
           </Jumbotron>
