@@ -15,26 +15,41 @@ nav .brand-logo, nav ul a {
 .jumbotron {
   background-image: url('./images/cookies.jpg');
   background-size: cover;
-  height: auto;
+  height: 80vh;
+  margin-bottom:0px !important;
   /* margin-top: -42px; */
 }
+
+/* .jumbotron h1 {
+  color:#2C3E50;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding:20px;
+} */
+
+.jumbotron .lighter {
+  color:#2C3E50;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding:20px;
+}
+
+/* .jumbotron p{
+  color:white;
+  background-color: #2C3E50;
+  padding:20px;
+} */
 
 .outline-primary{
   background-color: transparent !important;
 border: 1px solid white !important;
 }
 
-/* button {
-  background-color: transparent  !important;
-border: 1px solid white  !important;
-} */
 
 .copy {
   background-color: #2C3E50 !important;
   color: white;
   text-align: center;
   padding: 60px;
-  margin-top: -30px;
+  /* margin-top: -30px; */
 }
 
 .bigimg {
@@ -98,6 +113,12 @@ h1, h2, h3, h4, h5 {
   font-weight: 400
 }
 
+.copy button {
+  border: 1px solid white;
+background-color: transparent;
+width: 60%;
+}
+
 .cart {
   margin-top: 40px;
 }
@@ -121,4 +142,12 @@ h1, h2, h3, h4, h5 {
 
 .item-desc {
   align-self: center;
+}
+
+
+@media only screen and (max-width: 992px) {
+  nav .brand-logo {
+      left: 20% !important;
+      transform: translateX(-50%);
+  }
 }

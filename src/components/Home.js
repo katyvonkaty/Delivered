@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron';
+import Navbar from "./Navbar";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Copy from './Copy';
 import CopyImg from "./CopyImg";
 import BigImg from "./BigImg";
+import JumbotronImgCopy from "./JumbotronImgCopy";
 
 
 
@@ -17,27 +18,11 @@ class Home extends Component{
         return(
           <React.Fragment>
 
-          <Jumbotron fluid className="about">
-            <Container>
-              <Row>
-                <Col sm={4}> <h3 className="link"> About </h3>  </Col>
-              </Row>
+          <JumbotronImgCopy
+          title="Chocolate Chip Oatmeal Cookies"
+          content="This molasses-dark, ginger-and-spice flavored cookie is perfect for gingerbread men. We roll it a bit thicker than usual, to give the cookies just a hint of chew. While ginger is often thought of as a winter baking flavor, we've found that ginger pairs well with various fruits, too"
 
-              <Row>
-                <Col sm={4}> <h3 className="link"> Order </h3> </Col>
-              </Row>
-
-              <Row>
-                <Col sm={4}> <h3 className="link"> About </h3>  </Col>
-              </Row>
-
-              <Row>
-                <Col sm={4}> <h3 className="link"> Order </h3> </Col>
-              </Row>
-
-            </Container>
-          </Jumbotron>
-
+          />
 
             <Copy
             title= "Super-moist and packed with flavor"
@@ -60,7 +45,7 @@ class Home extends Component{
             <Copy
             title= "Original Cake Pan Cake"
             content= "Now we're proud to name this our 225th Anniversary Recipe of the Centuries. Dark, moist, delicious, and CHOCOLATE, this is truly a cake for all reasons, all seasons — and for bakers (and their family and friends) everywhere."
-              buttonText="lets go"
+              buttonText="here we go!"
             />
 
 

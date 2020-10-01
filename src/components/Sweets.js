@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import {connect} from "react-redux"
 import { addToCart } from './actions/cartActions'
 import AddCircleIcon from '@material-ui/icons/AddCircle';
+import Copy from './Copy';
 
-// import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
 
 
  class Sweets extends Component{
@@ -35,12 +35,22 @@ import AddCircleIcon from '@material-ui/icons/AddCircle';
         })
 
         return(
+            <React.Fragment>
+
+            <Copy
+            title= "How to keep pumpkin pie from cracking"
+            content= "Most Snickerdoodle recipes rely on vegetable shortening for their crisp/crunchy texture. For those of you who like to avoid shortening, we offer this butter-based Snickerdoodle — which can be either soft and chewy, or crunchy, depending on how long you bake it. Interestingly, they're made with either all-purpose flour or bread flour — tasty evidence that bread flour's not JUST for bread."
+            buttonText="lets go"
+            />
+
             <div className="container">
                 <h3 className="center">Our items</h3>
                 <div className="box">
                     {itemList}
                 </div>
             </div>
+            </React.Fragment>
+
         )
     }
 }

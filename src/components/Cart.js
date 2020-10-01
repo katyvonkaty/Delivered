@@ -5,7 +5,9 @@ import IndeterminateCheckBoxIcon from '@material-ui/icons/IndeterminateCheckBox'
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 import { removeItem,addQuantity,subtractQuantity} from './actions/cartActions'
 import Recipe from './Recipe'
+
 class Cart extends Component{
+
 
     //to remove the item completely
     handleRemove = (id)=>{
