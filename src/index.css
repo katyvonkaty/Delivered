@@ -20,6 +20,10 @@ nav .brand-logo, nav ul a {
   /* margin-top: -42px; */
 }
 
+a:hover {
+  background-color: transparent !important;
+}
+
 /* .jumbotron h1 {
   color:#2C3E50;
   background-color: rgba(255, 255, 255, 0.7);
