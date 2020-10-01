@@ -14,7 +14,7 @@ const Navbar = ()=>{
 
            <nav className="nav-wrapper">
                <div className="container">
-                   <Link to="/" className="brand-logo">Delivered</Link>
+                   <Link to="/home" className="brand-logo">Delivered</Link>
 
                    <ul className="right">
                        <li><Link to="/about">About</Link></li>
