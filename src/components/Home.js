@@ -11,11 +11,32 @@ import BigImg from "./BigImg";
 
 class Home extends Component{
 
+
     render(){
 
         return(
           <React.Fragment>
 
+          <Jumbotron fluid className="about">
+            <Container>
+              <Row>
+                <Col sm={4}> <h3 className="link"> About </h3>  </Col>
+              </Row>
+
+              <Row>
+                <Col sm={4}> <h3 className="link"> Order </h3> </Col>
+              </Row>
+
+              <Row>
+                <Col sm={4}> <h3 className="link"> About </h3>  </Col>
+              </Row>
+
+              <Row>
+                <Col sm={4}> <h3 className="link"> Order </h3> </Col>
+              </Row>
+
+            </Container>
+          </Jumbotron>
 
 
             <Copy
