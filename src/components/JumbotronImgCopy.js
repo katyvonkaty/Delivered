@@ -8,14 +8,13 @@ import Col from 'react-bootstrap/Col';
 const JumbotronImgCopy = (props) => {
   return(
     <Jumbotron className="jumbotron">
-      <Container fluid>
-        <Row>
-          <Col sm={6} className="lighter">
+      <Container centered fluid>
+        <Row centered>
+          <Col sm={{span: 6, offset: 3}} centered className="lighter">
           <h1> {props.title} </h1>
           <p> {props.content} </p>
           </Col>
         </Row>
-
       </Container>
     </Jumbotron>
   )

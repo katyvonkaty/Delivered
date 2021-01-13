@@ -13,6 +13,9 @@ class NavbarItems extends Component{
             <ul className="center aligned">
                 <li><Link to="/about"> Shipping </Link></li>
                 <li><Link to="/sweets">Sweets</Link></li>
+                <li><Link to="/cart">Shopping Cart</Link></li>
+                <li><Link to="/about"> Shipping </Link></li>
+                <li><Link to="/sweets">Sweets</Link></li>
                 <li><Link to="/cart">Shopping Cart <ShoppingCartIcon /></Link></li>
             </ul>
           </div>

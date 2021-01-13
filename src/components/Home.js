@@ -6,6 +6,8 @@ import Copy from './Copy';
 import CopyImg from "./CopyImg";
 import BigImg from "./BigImg";
 import JumbotronImgCopy from "./JumbotronImgCopy";
+import CarouselItems from "./CarouselItems";
+
 
 
 
@@ -16,13 +18,9 @@ class Home extends Component{
 
         return(
           <React.Fragment>
+          <CarouselItems />
 
-          <JumbotronImgCopy
-          title="Chocolate Chip Oatmeal Cookies"
-          content="This molasses-dark, ginger-and-spice flavored cookie is perfect for gingerbread men. We roll it a bit thicker than usual, to give the cookies just a hint of chew. While ginger is often thought of as a winter baking flavor, we've found that ginger pairs well with various fruits, too"
-
-          />
-
+      
             <Copy
             title= "Super-moist and packed with flavor"
             content= "Whenever we have a company gathering, this pumpkin bread is one of the first things to disappear. Super-moist and packed with flavor, it can be made into a simple pumpkin loaf; or enhanced with chocolate chips and/or nuts. Or raisins"

@@ -5,6 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css'
 import "../node_modules/materialize-css/dist/css/materialize.min.css";
 import "../node_modules/materialize-css/dist/js/materialize.min.js";
+import "../node_modules/bootstrap/dist/css/bootstrap.css"
+import "../node_modules/bootstrap/dist/js/bootstrap.js"
+
+
 import cartReducer from './components/reducers/cartReducer';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
