@@ -24,6 +24,26 @@ nav {
   box-shadow: none !important;
 }
 
+.footer {
+  padding:40px !important;
+}
+
+.center .menu a {
+  padding:20px;
+  color: #08213e;
+}
+
+.center {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.crisp {
+  width:20%;
+}
+
+
+
 .carousel .carousel-item {
     visibility: visible !important;
     width: 100vw !important;

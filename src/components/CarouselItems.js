@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import cookies from '../images/cookies.jpg';
 import crisp from '../images/item1.jpg';
 
-import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel';
+import Carousel, { slidesToShowPlugin, slidesToScrollPlugin } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
 
@@ -116,22 +116,22 @@ import '@brainhubeu/react-carousel/lib/style.css';
 
 const CarouselItems = () => {
   return (
-    <Carousel arrows centered infinite
-        plugins={[
-        'centered',
+
+    <Carousel fastSwipe infinite
+      plugins={[
         'infinite',
-        'arrows',
+        'fastSwipe',
         {
           resolve: slidesToShowPlugin,
           options: {
-           numberOfSlides: 2,
-          },
+           numberOfSlides: 3
+          }
         },
       ]}
     >
       <img src={cookies} />
       <img src={crisp} />
-      <img src={cookies} />
+      <img src={crisp} />
     </Carousel>
   )
 }

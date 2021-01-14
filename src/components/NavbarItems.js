@@ -1,10 +1,11 @@
 // import React, { Component } from 'react';
 //
-// import { Link} from "react-router-dom";
 // import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 
 import React, { Component } from 'react'
+import { Link} from "react-router-dom";
+
 import { Input, Menu } from 'semantic-ui-react'
 
  class NavbarItems extends Component {
@@ -16,24 +17,46 @@ import { Input, Menu } from 'semantic-ui-react'
     const { activeItem } = this.state
 
     return (
-      <Menu.Menu position='center'>
+      <Menu.Menu className="ui fluid item menu stackable" position='center'>
       <Menu secondary >
-        <Menu.Item
-          name='home'
-           position='center'
-          active={activeItem === 'home'}
-          onClick={this.handleItemClick}
-        />
-        <Menu.Item
-          name='messages'
-          active={activeItem === 'messages'}
-          onClick={this.handleItemClick}
-        />
-        <Menu.Item
-          name='friends'
-          active={activeItem === 'friends'}
-          onClick={this.handleItemClick}
-        />
+        <Link to="/sweets">
+          <Menu.Item
+            name='home'
+             position='center'
+            active={activeItem === 'home'}
+            onClick={this.handleItemClick}
+          />
+        </Link>
+        <Link to="/sweets">
+          <Menu.Item
+            name='messages'
+            active={activeItem === 'messages'}
+            onClick={this.handleItemClick}
+          />
+        </Link>
+        <Link to="/about">
+          <Menu.Item
+            name='friends'
+            active={activeItem === 'friends'}
+            onClick={this.handleItemClick}
+          />
+        </Link>
+        <Link to="/sweets">
+          <Menu.Item
+            name='home'
+             position='center'
+            active={activeItem === 'home'}
+            onClick={this.handleItemClick}
+          />
+        </Link>
+        <Link to="/sweets">
+          <Menu.Item
+            name='messages'
+            active={activeItem === 'messages'}
+            onClick={this.handleItemClick}
+          />
+        </Link>
+
         </Menu>
         </Menu.Menu>
     )
