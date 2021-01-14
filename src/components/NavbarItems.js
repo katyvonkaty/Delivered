@@ -1,9 +1,10 @@
 // import React, { Component } from 'react';
 //
-// import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 
 
 import React, { Component } from 'react'
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
+
 import { Link} from "react-router-dom";
 
 import { Input, Menu } from 'semantic-ui-react'
@@ -45,16 +46,17 @@ import { Input, Menu } from 'semantic-ui-react'
           <Menu.Item
             name='home'
              position='center'
-            active={activeItem === 'home'}
             onClick={this.handleItemClick}
           />
         </Link>
-        <Link to="/sweets">
+        <Link to="/cart">
           <Menu.Item
-            name='messages'
-            active={activeItem === 'messages'}
+            name='Shopping Cart'
+            active={activeItem === 'cart'}
             onClick={this.handleItemClick}
+
           />
+
         </Link>
 
         </Menu>

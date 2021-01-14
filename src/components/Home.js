@@ -6,8 +6,10 @@ import Copy from './Copy';
 import Footer from './Footer';
 import CopyImg from "./CopyImg";
 import BigImg from "./BigImg";
+
 import JumbotronImgCopy from "./JumbotronImgCopy";
 import CarouselItems from "./CarouselItems";
+import Demo from './demo/Demo';
 
 
 class Home extends Component{
@@ -17,6 +19,7 @@ class Home extends Component{
 
         return(
           <React.Fragment>
+          <Demo />
             <JumbotronImgCopy title="Super-moist and packed with flavor" />
 
 
