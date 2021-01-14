@@ -18,9 +18,10 @@ class Home extends Component{
 
         return(
           <React.Fragment>
+          <JumbotronImgCopy title="Super-moist and packed with flavor" />
           <CarouselItems />
 
-      
+
             <Copy
             title= "Super-moist and packed with flavor"
             content= "Whenever we have a company gathering, this pumpkin bread is one of the first things to disappear. Super-moist and packed with flavor, it can be made into a simple pumpkin loaf; or enhanced with chocolate chips and/or nuts. Or raisins"

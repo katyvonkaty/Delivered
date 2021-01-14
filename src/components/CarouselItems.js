@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
-import Carousel from 'react-bootstrap/Carousel';
 import "../../node_modules/bootstrap/dist/css/bootstrap.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import cookies from '../images/cookies.jpg';
+import crisp from '../images/item1.jpg';
+
+import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
 
 
 
@@ -54,55 +57,84 @@ import cookies from '../images/cookies.jpg';
 // }
 //
 // export default CarouselItems
+//
+// function CarouselItems()  {
+//   const [index, setIndex] = useState(0);
+//
+//   const handleSelect = (selectedIndex, e) => {
+//     setIndex(selectedIndex);
+//   };
+//
+//   return (
+//     <Carousel activeIndex={index} onSelect={handleSelect}>
+//       <Carousel.Item>
+//         <img
+//           className="d-block w-100"
+//           src={cookies}
+//           alt="First slide"
+//         />
+//         <Carousel.Caption>
+//           <h3>First slide label</h3>
+//           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+//         </Carousel.Caption>
+//       </Carousel.Item>
+//       <Carousel.Item>
+//         <img
+//           className="d-block w-100"
+//           src={cookies}
+//           alt="Second slide"
+//         />
+//
+//         <Carousel.Caption>
+//           <h3>Second slide label</h3>
+//           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+//         </Carousel.Caption>
+//       </Carousel.Item>
+//       <Carousel.Item>
+//         <img
+//           className="d-block w-100"
+//           src={cookies}
+//           alt="Third slide"
+//         />
+//
+//         <Carousel.Caption>
+//           <h3>Third slide label</h3>
+//           <p>
+//             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+//           </p>
+//         </Carousel.Caption>
+//       </Carousel.Item>
+//     </Carousel>
+//   );
+// }
+//
+// export default CarouselItems
 
-function CarouselItems()  {
-  const [index, setIndex] = useState(0);
 
-  const handleSelect = (selectedIndex, e) => {
-    setIndex(selectedIndex);
-  };
+// import Carousel, { slidesToShowPlugin } from '@brainhubeu/react-carousel';
+// import '@brainhubeu/react-carousel/lib/style.css';
 
+const CarouselItems = () => {
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={cookies}
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={cookies}
-          alt="Second slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src={cookies}
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
+    <Carousel arrows centered infinite
+        plugins={[
+        'centered',
+        'infinite',
+        'arrows',
+        {
+          resolve: slidesToShowPlugin,
+          options: {
+           numberOfSlides: 2,
+          },
+        },
+      ]}
+    >
+      <img src={cookies} />
+      <img src={crisp} />
+      <img src={cookies} />
     </Carousel>
-  );
+  )
 }
+
 
 export default CarouselItems
