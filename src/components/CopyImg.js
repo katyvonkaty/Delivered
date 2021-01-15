@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Container from "react-bootstrap/Container";
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -14,7 +14,7 @@ const CopyImg = (props) => {
           <p> {props.copy} </p>
           <Button variant="dark">{props.buttonText}</Button>{' '}
           </Col>
-          <Col sm={6}><img className="cinnamon" src={props.img} /></Col>
+          <Col sm={6}><img className="cinnamon" src={props.img} alt="food img" /></Col>
 
         </Row>
       </Container>

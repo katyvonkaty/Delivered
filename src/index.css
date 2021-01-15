@@ -28,6 +28,11 @@ nav {
   padding:40px !important;
 }
 
+.ui.secondary.menu .active.item {
+  text-decoration: underline;
+  background-color: transparent !important;
+}
+
 .center .menu a {
   padding:20px;
   color: #08213e;
