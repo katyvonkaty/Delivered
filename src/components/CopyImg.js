@@ -8,7 +8,7 @@ import Button from 'react-bootstrap/Button';
 
 const CopyImg = (props) => {
     return (
-      <Container fluid className="copyimg">
+      <Container fluid className="copyimg stackable">
         <Row>
           <Col sm={{span:4, offset:1}}> <h4> {props.heading} </h4> <br />
           <p> {props.copy} </p>
