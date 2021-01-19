@@ -3,6 +3,7 @@ import Copy from './Copy';
 import Footer from './Footer';
 import CopyImg from "./CopyImg";
 import BigImg from "./BigImg";
+import CarouselItems from "./CarouselItems";
 import JumbotronImgCopy from "./JumbotronImgCopy";
 import Demo from './demo/Demo';
 
@@ -16,9 +17,9 @@ class Home extends Component{
           <React.Fragment>
             <Demo />
             <JumbotronImgCopy title="Super-moist and packed with flavor" />
-
+            <CarouselItems />
             <Copy
-            title= "Our Best Sellers"
+            title= "Baking Wisdom"
             content= "Whenever we have a company gathering, this pumpkin bread is one of the first things to disappear. Super-moist and packed with flavor, it can be made into a simple pumpkin loaf; or enhanced with chocolate chips and/or nuts. Or raisins"
             buttonText="View Best Sellers"
             />
