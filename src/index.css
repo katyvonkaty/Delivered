@@ -108,7 +108,7 @@ nav .brand-logo, nav ul a {
 }
 
 h1 {
-  font-size:80px !important;
+  font-size:80px;
 }
 
 h1,h2,h3,h4,h5 {
@@ -252,5 +252,11 @@ a:hover {
   nav .brand-logo {
     left: 20% !important;
     transform: translateX(-50%);
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size:50px !important;
   }
 }
