@@ -17,7 +17,7 @@ import { Menu } from 'semantic-ui-react'
     const { activeItem } = this.state
 
     return (
-      <Menu.Menu className="ui fluid item menu stackable" position='center'>
+      <Menu.Menu className="ui fluid item menu stackable itemsMenu" position='center'>
       <Menu secondary >
 
 
@@ -40,9 +40,28 @@ import { Menu } from 'semantic-ui-react'
             name='Shopping Cart'
             active={activeItem === 'cart'}
             onClick={this.handleItemClick}
-
           />
-
+        </Link>
+        <Link to="/about">
+          <Menu.Item
+            name='Recipes'
+            active={activeItem === 'recipes'}
+            onClick={this.handleItemClick}
+          />
+        </Link>
+        <Link to="/sweets">
+          <Menu.Item
+            name='Items'
+             position='center'
+            onClick={this.handleItemClick}
+          />
+        </Link>
+        <Link to="/cart">
+          <Menu.Item
+            name='Shopping Cart'
+            active={activeItem === 'cart'}
+            onClick={this.handleItemClick}
+          />
         </Link>
 
         </Menu>
@@ -50,7 +69,5 @@ import { Menu } from 'semantic-ui-react'
     )
   }
 }
-
-
 
 export default NavbarItems;

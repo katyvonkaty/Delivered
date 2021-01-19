@@ -16,7 +16,7 @@ import type {
   StaggeredProps,
 } from './Types';
 
-const msPerFrame = 1000 / 60;
+const msPerFrame = 500 / 60;
 
 type StaggeredMotionState = {
   currentStyles: Array<PlainStyle>,

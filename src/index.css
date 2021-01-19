@@ -1,9 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@300;500&family=Grand+Hotel&display=swap');
-
+ /* * {
+       cursor: none !important;
+ } */
 nav {
   background-color: white !important;
 }
 
+.copy button a {
+  color:red !important;
+}
+
+.copy button {
+  color:white !important;
+}
+
+.copy button:hover {
+  background-color:white !important;
+  color:navy !important;
+  border: transparent;
+
+}
 /* .btn, .btn-large, .btn-small {
   border: 1px solid #2c3e4f !important;
 color: #2c3e4f !important;
@@ -18,6 +34,10 @@ box-shadow: none !important;
 
 ul:not(.browser-default) {
   text-align: center !important;
+}
+
+.itemsMenu {
+  margin-top:-30px !important;
 }
 
 nav {
