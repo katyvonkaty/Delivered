@@ -252,12 +252,20 @@ a:hover {
   padding:20px;
 }
 
-.carouselItems h1,p {
+.carouselItems h1 {
   text-align: center;
   width:80%;
   margin:0 auto;
   padding:20px;
 }
+
+.carouselItems p {
+  text-align: center;
+  width:80%;
+  margin:0 auto;
+  padding:20px;
+}
+
 .item-desc {
   align-self: center;
 }
